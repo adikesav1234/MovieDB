@@ -1,0 +1,42 @@
+###
+GET  http://127.0.0.1:8000/movieview
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/movieview/
+Content-Type: application/json
+
+{
+    "title": "The Dark Knight",
+    "director": "Christopher Nolan",
+    "genre": "Action",
+    "release_year": 2008,
+    "rating": 9.0,
+    "duration": 152,
+    "description": "Batman faces a dangerous criminal who brings chaos to Gotham City.",
+    "language": "English"
+}
+
+#------------------------------------------------------------------------------------------
+###
+GET  http://127.0.0.1:8000/movieedit/6/
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8000/movieedit/1/
+Content-Type: application/json
+
+{
+    "id": 1,
+     "title": "Interstellar",
+    "director": "Christopher Nolan",
+    "genre": "Sci-Fi",
+    "release_year": 2014,
+    "rating": 9,
+    "duration": 169,
+    "description": "A team travels through a wormhole to find a new home for humanity.",
+    "language": "English"
+}
+
+###
+DELETE  http://127.0.0.1:8000/movieedit/6/
